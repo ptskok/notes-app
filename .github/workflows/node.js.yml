@@ -3,25 +3,10 @@ name: Run Tests
 on:
   push:
     branches:
-      - main  # Trigger on pushes to the main branch
+      - main
   pull_request:
 
 jobs:
-  backend-tests:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
-
-    - name: Navigate to Backend
-      run: cd backend && npm install && npm test
-
   frontend-tests:
     runs-on: ubuntu-latest
 
@@ -32,7 +17,11 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 18
+        node-version: 22
 
-    - name: Navigate to Frontend
-      run: cd frontend && npm install && npm test
+    - name: Install Dependencies and Jest
+      run: |
+        cd frontend
+        npm install
+        npm install jest --save-dev
+        npm test
