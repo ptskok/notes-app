@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1731504391225" clover="3.2.0">
-  <project timestamp="1731504391225" name="All files">
+<coverage generated="1732730375639" clover="3.2.0">
+  <project timestamp="1732730375639" name="All files">
     <metrics statements="35" coveredstatements="35" conditionals="30" coveredconditionals="29" methods="4" coveredmethods="4" elements="69" coveredelements="68" complexity="0" loc="35" ncloc="35" packages="1" files="1" classes="1"/>
     <file name="helper.js" path="C:\Users\ptsko\OneDrive\Počítač\ing-inf\5.roc\ESS\notes-app\frontend\src\utils\helper.js">
       <metrics statements="35" coveredstatements="35" conditionals="30" coveredconditionals="29" methods="4" coveredmethods="4"/>
